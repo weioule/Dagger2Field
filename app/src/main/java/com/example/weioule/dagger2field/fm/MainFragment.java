@@ -1,5 +1,6 @@
 package com.example.weioule.dagger2field.fm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -10,10 +11,13 @@ import android.widget.TextView;
 
 import com.example.weioule.dagger2field.R;
 import com.example.weioule.dagger2field.act.MainActivity;
+import com.example.weioule.dagger2field.act.ParameterActivity;
 import com.example.weioule.dagger2field.contact.MainFragmentContact;
 import com.example.weioule.dagger2field.utils.ToastUtil;
 
 import javax.inject.Inject;
+
+import static com.example.weioule.dagger2field.R.id.do_next;
 
 
 /**
@@ -51,6 +55,7 @@ public class MainFragment extends Fragment implements MainFragmentContact.MainVi
         mUserName = (TextView) view.findViewById(R.id.user_name);
         view.findViewById(R.id.btn_toast).setOnClickListener(this);
         view.findViewById(R.id.btn_set_user_name).setOnClickListener(this);
+        view.findViewById(do_next).setOnClickListener(this);
     }
 
     @Override
@@ -71,6 +76,9 @@ public class MainFragment extends Fragment implements MainFragmentContact.MainVi
                 break;
             case R.id.btn_toast:
                 mPresenter.showToastBtnClick();
+                break;
+            case do_next:
+                startActivity(new Intent(getContext(), ParameterActivity.class));
                 break;
             default:
                 break;
