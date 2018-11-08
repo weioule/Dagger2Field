@@ -9,7 +9,9 @@ demo 主要是结合我们常用的 Application 和 BaseActivity 等分层次的
 
 详细讲解请看博客：https://blog.csdn.net/WOL965/article/details/80817489
 
-相信认真看完博客，你也能够清晰的了解 Dagger2 的用法和一些设计思想。认真起来其实也没那么难的。希望能帮助想要学习 Dagger2 的小伙伴。
+相信认真看完博客，你也能够清晰的了解 Dagger2 的用法和一些设计思想。认真起来其实也没那么难的。
 
-如有修正的地方，还请多多赐教！
+希望能帮助想要学习 Dagger2 的小伙伴。
+
+
 
